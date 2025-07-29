@@ -16,6 +16,7 @@ func main() {
 		fmt.Println(colors[i])
 	}
 
+	// _ is the index (in range of colors)
 	for _, color := range colors {
 		fmt.Println(color)
 	}
@@ -31,7 +32,8 @@ func main() {
 		sum += sum
 		fmt.Println("Sum:", sum)
 		if sum > 200 {
-			goto theEnd
+			goto theEnd // goto is to jump to an arbitrary part in the program
+			// need to define theEnd; notice how theEnd doesnt have a = sign
 		}
 	}
 
