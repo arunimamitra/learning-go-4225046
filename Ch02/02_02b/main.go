@@ -18,4 +18,7 @@ func main() {
 	len, err := fmt.Println(str1, str2, str3)
 	fmt.Println("Error is", err)
 	fmt.Println("Length is", len)
+	// we can also use printf for print format
+	// %v for print variable
+	fmt.Printf("Length is %v\n", len)
 }
