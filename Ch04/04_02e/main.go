@@ -32,9 +32,14 @@ func main() {
 	fmt.Println(result)
 	
 	x := 0
+	// Notice how there's no x mentioned in the switch condition
 	switch {
 	case x < 0:
 		result = "Less than zero"
+		// In Go, we don't need a break statement.
+		// when condition is true, program flow breaks 
+		// to the end of the switch automatically
+		// If we use "fallthrough", it will also execute default statement
 		fallthrough
 	case x == 0:
 		result = "Equals zero"
