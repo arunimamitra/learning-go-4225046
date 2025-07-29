@@ -7,7 +7,12 @@ import (
 func main() {
 
 	anInt := 42
+	// * -> dereferencing operator
+	// that means it's not going to be a variable of the type itself,
+	// but instead it's going to point to a variable of that type
+
 	var p *int = &anInt
+	// p -> is a pointer and it's pointing to the memory address of anInt
 
 	if p == nil {
 		fmt.Println("p is nil")
