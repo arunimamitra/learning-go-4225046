@@ -25,6 +25,7 @@ func addValues(value1, value2 int) int {
 }
 
 func addAllValues(values ...int) (int, int, float64) {
+	// values ...int -> is received as a slice of integers
 	sum := 0
 	for _, v := range values {
 		sum += v

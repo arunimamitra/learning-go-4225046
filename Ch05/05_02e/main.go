@@ -25,4 +25,6 @@ func (d Dog) Speak() {
 
 func (d Dog) SpeakThreeTimes() string {
 	return fmt.Sprintf("%v! %v! %v!", d.Sound, d.Sound, d.Sound)
+	// Sprintf same as printf but instead of outputting to the console,
+	// it returns a variable
 }
