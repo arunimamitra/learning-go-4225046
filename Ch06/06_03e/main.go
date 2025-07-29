@@ -29,6 +29,7 @@ func toursFromJSON(content string) []Tour {
 	checkError(err)
 
 	var tour Tour
+	// decoder.More() -> looks for the next value in the json content
 	for decoder.More() {
 		err := decoder.Decode(&tour)
 		checkError(err)
