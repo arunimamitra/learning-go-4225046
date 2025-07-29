@@ -9,9 +9,11 @@ import (
 func main() {
 	fileName := "./fromString.txt"
 	file, err := os.Create(fileName)
+	// defer keyword - wait until everything within
+	// this function has been executed and then execute this line.
 	defer file.Close()
 	checkError(err)
-	length, err := io.WriteString(file, "Hello from Go!")
+	length, err := io.WriteString(file, "trial arunima")
 	fmt.Printf("Wrote a file with %v characters\n", length)
 	readFile(fileName)
 }
